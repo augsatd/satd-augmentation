@@ -19,25 +19,39 @@ In accordance with the original dataset, the dataset comprises four distinct CSV
 
 ```
 ├── SATD Keywords
-│   ├── Keywords based on Source of Artifacts
-│   │   ├── Code comment.txt
-│   │   ├── Commit message.txt
-│   │   ├── Issue section.txt
-│   │   └── Pull section.txt
-│   ├── Keywords based on Types of SATD
-│   │   ├── code-design debt.txt
-│   │   ├── documentation debt.txt
-│   │   ├── requirement debt.txt
-│   │   └── test debt.txt
+│  ├── Keywords based on Source of Artifacts
+│  │  ├── Code comment.txt
+│  │  ├── Commit message.txt
+│  │  ├── Issue section.txt
+│  │  └── Pull section.txt
+│  ├── Keywords based on Types of SATD
+│  │  ├── code-design debt.txt
+│  │  ├── documentation debt.txt
+│  │  ├── requirement debt.txt
+│  │  └── test debt.txt
+│  └── .DS_Store
 ├── src
-│   ├── bert.py
-│   ├── bilstm.py
-│   └── preprocessing.py
+│  ├── bert
+│  │  ├── config.py
+│  │  ├── main.py
+│  │  ├── model_builder.py
+│  │  ├── predict.py
+│  │  ├── train_model.py
+│  │  └── utils.py
+│  ├── bilstm
+│  │  ├── commit_augmented.csv
+│  │  ├── data_preparation.py
+│  │  ├── embedding_loader.py
+│  │  ├── evaluate_model.py
+│  │  ├── main.py
+│  │  ├── model_builder.py
+│  │  └── train_model.py
+│  └── preprocessing.py
+├── Supplementary Material.docx
 ├── data-augmentation-code_comments.csv
-├── data-augmentation-commit_messages.csv
+├── data-augmentation-commit-messages.csv
 ├── data-augmentation-issues.csv
-├── data-augmentation-pull_requests.csv
-└── Supplementary Material.docx
+└── data-augmentation-pull-requests.csv
 ```
 
 ## Requirements:
